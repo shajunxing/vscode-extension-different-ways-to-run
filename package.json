@@ -1,0 +1,81 @@
+{
+    "name": "different-ways-to-run",
+    "version": "1.0.0",
+    "publisher": "shajunxing",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "displayName": "Different Ways To Run",
+    "description": "Many different ways to run current file via context menu, simple and straightforward, regardless of file extensions.",
+    "icon": "icon.png",
+    "categories": [
+        "Programming Languages",
+        "Other"
+    ],
+    "keywords": [
+        "lua",
+        "node",
+        "python",
+        "quickjs",
+        "run",
+        "menu"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shajunxing/vscode-extension-different-ways-to-run.git"
+    },
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./main",
+    "contributes": {
+        "commands": [
+            {
+                "command": "run",
+                "title": "Run"
+            },
+            {
+                "command": "run_qjs",
+                "title": "Run with qjs"
+            },
+            {
+                "command": "run_node",
+                "title": "Run with node"
+            },
+            {
+                "command": "run_python",
+                "title": "Run with python"
+            },
+            {
+                "command": "run_python3",
+                "title": "Run with python3"
+            },
+            {
+                "command": "run_lua",
+                "title": "Run with lua"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "run"
+                },
+                {
+                    "command": "run_qjs"
+                },
+                {
+                    "command": "run_node"
+                },
+                {
+                    "command": "run_python"
+                },
+                {
+                    "command": "run_python3"
+                },
+                {
+                    "command": "run_lua"
+                }
+            ]
+        }
+    }
+}
